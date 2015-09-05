@@ -19,8 +19,16 @@
     }
 
     .header {
-        .my-name {
-            font-weight: 300;
+        .top-bar.hide-for-small {
+            border-bottom: solid 1px rgba(128, 128, 128, 0.5);
+            // move the bottom of the top bar to align with the buttons on the side
+            height: 46px;
+        }
+        .tab-bar.show-for-small {
+            border-bottom: solid 1px gray;
+        }
+        .top-bar-section li:not(.has-form) a:not(.button) {
+            transition: all 300ms ease;
         }
     }
 }
