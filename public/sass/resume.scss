@@ -1,14 +1,7 @@
 @import "settings";
 @import "foundation/components/grid";
-@import "foundation/components/buttons";
-@import "foundation/components/top-bar";
-@import "foundation/components/type";
 @import "foundation/components/offcanvas";
 @import "foundation/components/visibility";
-
-/*
- * 
- */
 
 // small
 @media only screen {
@@ -17,18 +10,56 @@
     .header {
         height: 100%;
     }
-
     .header {
-        .top-bar.hide-for-small {
-            border-bottom: solid 1px rgba(128, 128, 128, 0.5);
-            // move the bottom of the top bar to align with the buttons on the side
-            height: 46px;
+        .hide-for-small {
+            .top {
+                margin-top: 1rem;
+            }
+            hr {
+                margin: 1rem;
+            }
+            .name {
+                font-weight: 300;
+                text-align: center;
+                margin: 0;
+            }
+            .social {
+                text-align: center;
+            }
+            .link {
+                color: $charcoal;
+                text-decoration: none;
+                transition: all 300ms ease;
+                &:hover {
+                    color: $black;
+                }
+                .icon {
+                    position: absolute;
+                    max-width: 2rem;
+                    margin-left: -1rem;
+                    top: -5px;
+                }
+                .square {
+                    max-width: 1.5rem;
+                    margin-top: 4px;
+                }
+                .text {
+                    margin-left: 1rem;
+                }
+            }
         }
         .tab-bar.show-for-small {
             border-bottom: solid 1px gray;
         }
-        .top-bar-section li:not(.has-form) a:not(.button) {
-            transition: all 300ms ease;
+        .off-canvas-list {
+            .icon {
+                max-width: 2rem;
+            }
+            .square {
+                max-width: 1.5rem;
+                margin-right: 5px;
+                margin-left: 4px;
+            }
         }
     }
 }
