@@ -3,8 +3,8 @@
 @import "foundation/components/offcanvas";
 @import "foundation/components/visibility";
 
-// small
-@media only screen {
+// all screen sizes and print
+@media only print, screen {
     .off-canvas-wrap,
     .inner-wrap,
     .header {
@@ -51,7 +51,7 @@
         .tab-bar.show-for-small {
             border-bottom: solid 1px gray;
         }
-        .off-canvas-list {
+        .left-off-canvas-menu {
             .icon {
                 max-width: 2rem;
             }
@@ -60,6 +60,27 @@
                 margin-right: 5px;
                 margin-left: 4px;
             }
+        }
+    }
+}
+
+// print specifics
+@media print {
+    // set the width of the display to what fits a normal 8x10
+    // (and also map it to the 'large' size)
+    html {
+        width: rem-calc(1100px);
+    }
+    // adjust the large column sizes
+    @for $i from 1 through $total-columns {
+        .large-#{$i} {
+            width: percentage($i / $total-columns);
+        }
+    }
+    // hide the header icons
+    .header {
+        .hide-for-small .link .icon {
+            display: none;
         }
     }
 }

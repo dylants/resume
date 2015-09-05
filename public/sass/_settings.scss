@@ -162,7 +162,7 @@ $black       : #000000;
 // $xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint);
 // $xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999));
 
-// $screen: "only screen";
+$screen: "only print, screen";
 
 // $landscape: "#{$screen} and (orientation: landscape)";
 // $portrait: "#{$screen} and (orientation: portrait)";
