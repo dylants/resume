@@ -1,8 +1,29 @@
 @import "settings";
 @import "foundation/components/grid";
+@import "foundation/components/buttons";
+@import "foundation/components/top-bar";
+@import "foundation/components/type";
+@import "foundation/components/offcanvas";
+@import "foundation/components/visibility";
+
+/*
+ * 
+ */
 
 // small
-@media only screen {}
+@media only screen {
+    .off-canvas-wrap,
+    .inner-wrap,
+    .header {
+        height: 100%;
+    }
+
+    .header {
+        .my-name {
+            font-weight: 300;
+        }
+    }
+}
 
 // medium
 @media only screen and (min-width: 40.0625em) {}

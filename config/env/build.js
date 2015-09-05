@@ -13,8 +13,10 @@ module.exports = {
                 // jquery
                 "public/lib/jquery/dist/jquery.min.js",
                 // foundation
-                "public/lib/foundation/js/foundation.min.js",
-                "public/lib/foundation/js/vendor/modernizr.js"
+                "public/lib/foundation/js/vendor/fastclick.js",
+                "public/lib/foundation/js/vendor/modernizr.js",
+                "public/lib/foundation/js/vendor/placeholder.js",
+                "public/lib/foundation/js/foundation.min.js"
             ]
         },
         css: [

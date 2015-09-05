@@ -31,6 +31,15 @@
     {% for jsFile in jsFiles %}
     <script type="text/javascript" src="{{jsFile}}"></script>
     {% endfor %}
+
+    <!-- initialize foundation -->
+    <script type="text/javascript">
+    $(document).foundation({
+        offcanvas: {
+            close_on_click: true
+        }
+    });
+    </script>
 </body>
 
 </html>
