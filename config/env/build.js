@@ -23,7 +23,7 @@ module.exports = {
             "public/dist/**/*.css"
         ],
         js: [
-
+            "public/js/**/*.js"
         ]
     }
 };
