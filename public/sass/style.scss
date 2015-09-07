@@ -5,28 +5,31 @@
 
 // all screen sizes and print
 @media only print, screen {
-    .off-canvas-wrap,
-    .inner-wrap {
-        height: 100%;
-    }
     // nav
     .nav.hide-for-small {
+        margin-bottom: 3rem;
         .top {
             margin-top: 1rem;
         }
         hr {
-            margin: 1rem;
+            margin: 0.5rem 0 1rem;
         }
         .name {
             font-weight: 300;
-            text-align: center;
+            font-size: 2.25rem;
+            text-align: right;
             margin: 0;
+        }
+        .meta {
+            text-align: right;
+            font-weight: 300;
         }
         .social {
             text-align: center;
         }
         .link {
             color: $charcoal;
+            font-weight: 300;
             text-decoration: none;
             transition: all 300ms ease;
             &:hover {
@@ -49,6 +52,7 @@
     }
     .tab-bar.show-for-small {
         border-bottom: solid 1px gray;
+        margin-bottom: 1rem;
     }
     .left-off-canvas-menu {
         .icon {
@@ -62,7 +66,54 @@
     }
     // main
     .main {
-
+        margin-bottom: 1rem;
+        .heading {
+            h2 {
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            hr {
+                border: solid $smoke;
+                border-width: 1px 0 0;
+                margin-top: 0;
+            }
+        }
+        .experience .heading hr {
+            margin-bottom: 0;
+        }
+        .company {
+            margin: 1rem 0;
+            .icon {
+                display: inline;
+                float: left;
+                max-width: 100px;
+                padding-right: 0.75rem;
+                margin-bottom: 2rem;
+            }
+            .rectangle {
+                max-width: 175px;
+                max-height: 70px;
+                margin-top: 7px;
+            }
+            h3, h4, h5 {
+                font-weight: 300;
+                margin: 0;
+            }
+            h5 {
+                font-size: 1rem;
+            }
+            .duration {
+                padding-right: 10px;
+            }
+            .location {
+                padding-left: 10px;
+            }
+        }
+        .description {
+            p {
+                margin-bottom: 0.75rem;
+            }
+        }
     }
 }
 
