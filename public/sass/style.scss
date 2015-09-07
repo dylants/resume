@@ -114,6 +114,20 @@
                 margin-bottom: 0.75rem;
             }
         }
+        .awards {
+            margin-top: 1rem;
+            .heading hr {
+                margin-bottom: 1rem;
+            }
+        }
+        .awards-list {
+            li {
+                list-style-type: circle;
+            }
+        }
+        .education .heading hr {
+            margin-bottom: 1rem;
+        }
     }
 }
 
