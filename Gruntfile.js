@@ -35,8 +35,7 @@ module.exports = function(grunt) {
         cssmin: {
             combine: {
                 files: {
-                    "<%= minifiedApplicationCSSFiles %>": "<%= applicationCSSFiles %>",
-                    "<%= minifiedVendorCSSFiles %>": "<%= vendorCSSFiles %>"
+                    "<%= minifiedApplicationCSSFiles %>": "<%= applicationCSSFiles %>"
                 }
             }
         },
@@ -114,7 +113,6 @@ module.exports = function(grunt) {
         var gitRev = require("git-rev-sync");
 
         grunt.config.set("vendorJavaScriptFiles", config.assets.lib.js);
-        grunt.config.set("vendorCSSFiles", config.assets.lib.css);
         grunt.config.set("applicationJavaScriptFiles", config.assets.js);
         grunt.config.set("applicationCSSFiles", config.assets.css);
 
