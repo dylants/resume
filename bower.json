@@ -1,7 +1,0 @@
-{
-    "name": "resume",
-    "dependencies": {
-        "foundation": "5.5.x",
-        "jquery": "2.1.x"
-    }
-}

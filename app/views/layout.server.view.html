@@ -2,159 +2,173 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Dylan Smith</title>
+  <title>Dylan Smith</title>
 
-    <!--
+  <!--
     *
-    * Hey you! You chose to view the source! Would you like to see
-    * the full source instead?
-    * If so, please visit: https://github.com/dylants/resume
+    * Hey you! You chose to view the source! Would you like to see the full source instead?
+    * If so, please visit: https://github.com/dylants to see this and other projects.
+    * Thanks!
     *
     * Thanks for stopping by!
     *
     -->
 
-    <!-- General META -->
-    <meta charset="utf-8">
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- You should totally check out this awesome clipart full size -->
-    <link rel="icon" href="https://s3.amazonaws.com/dylants-resume/public/images/resume.jpg" />
+  <!-- You should totally check out this awesome clipart full size -->
+  <link rel="icon" href="https://s3.amazonaws.com/dylants-resume/public/images/resume.jpg" />
 
-    <!-- git revision: {{gitRevision}} -->
+  <!-- git revision: {{gitRevision}} -->
 
-    <!--Application CSS Files-->
-    {% for cssFile in cssFiles %}
-    <link rel="stylesheet" href="{{cssFile}}">{% endfor %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css">
+  <link rel="stylesheet" href="/public/style.css" />
 
-    <!-- HTML5 Shim -->
-    <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="off-canvas-wrap" data-offcanvas>
-        <div class="inner-wrap">
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
 
-            <!-- nav -->
-            <nav class="nav hide-for-small">
-                <section class="top row">
-                    <div class="small-12 columns">
-                        <h1 class="name">Dylan Smith</h1>
-                        <div class="meta">Web Developer</div>
-                        <div class="meta">Austin, TX</div>
-                        <hr>
-                    </div>
-                </section>
-                <section class="bottom row">
-                    <div class="social medium-2 columns">
-                        <a class="link ga-link" href="https://github.com/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
-                            <span class="text">GitHub</span>
-                        </a>
-                    </div>
-                    <div class="social medium-2 columns">
-                        <a class="link ga-link" href="https://blog.dylants.com">
-                            <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/blog.png">
-                            <span class="text">Blog</span>
-                        </a>
-                    </div>
-                    <div class="social medium-2 columns">
-                        <a class="link ga-link" href="https://stackoverflow.com/users/3666800/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/stack-overflow.png">
-                            <span class="text">Stack Overflow</span>
-                        </a>
-                    </div>
-                    <div class="social medium-2 columns">
-                        <a class="link ga-link" href="https://gist.github.com/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
-                            <span class="text">Gists</span>
-                        </a>
-                    </div>
-                    <div class="social medium-2 columns">
-                        <a class="link ga-link" href="https://twitter.com/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/twitter.png">
-                            <span class="text">Twitter</span>
-                        </a>
-                    </div>
-                    <div class="social medium-2 columns">
-                        <a class="link ga-link" href="https://www.linkedin.com/in/dylants">
-                            <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/linkedin.png">
-                            <span class="text">LinkedIn</span>
-                        </a>
-                    </div>
-                </section>
-            </nav>
-            <nav class="tab-bar show-for-small">
-                <section class="left-small">
-                    <a class="left-off-canvas-toggle menu-icon">
-                        <span></span>
-                    </a>
-                </section>
-                <section class="middle tab-bar-section">
-                    <h1 class="title">Dylan Smith</h1>
-                </section>
-            </nav>
-            <aside class="left-off-canvas-menu">
-                <ul class="off-canvas-list">
-                    <li>
-                        <label class="first">Social</label>
-                    </li>
-                    <li>
-                        <a class="link ga-link" href="https://github.com/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
-                            <span class="text">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link ga-link" href="https://blog.dylants.com">
-                            <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/blog.png">
-                            <span class="text">Blog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link ga-link" href="https://stackoverflow.com/users/3666800/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/stack-overflow.png">
-                            <span class="text">Stack Overflow</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link ga-link" href="https://gist.github.com/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
-                            <span class="text">Gists</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link ga-link" href="https://twitter.com/dylants">
-                            <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/twitter.png">
-                            <span class="text">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link ga-link" href="https://www.linkedin.com/in/dylants">
-                            <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/linkedin.png">
-                            <span class="text">LinkedIn</span>
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-            <a class="exit-off-canvas" href="#"></a>
+      <!-- nav -->
+      <nav class="nav hide-for-small">
+        <section class="top row">
+          <div class="small-12 columns">
+            <h1 class="name">Dylan Smith</h1>
+            <div class="meta">Web Developer</div>
+            <div class="meta">Austin, TX</div>
+            <hr>
+          </div>
+        </section>
+        <section class="bottom row">
+          <div class="social medium-2 columns">
+            <a class="link ga-link" href="https://github.com/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
+              <span class="text">GitHub</span>
+            </a>
+          </div>
+          <div class="social medium-2 columns">
+            <a class="link ga-link" href="https://blog.dylants.com">
+              <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/blog.png">
+              <span class="text">Blog</span>
+            </a>
+          </div>
+          <div class="social medium-2 columns">
+            <a class="link ga-link" href="https://stackoverflow.com/users/3666800/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/stack-overflow.png">
+              <span class="text">Stack Overflow</span>
+            </a>
+          </div>
+          <div class="social medium-2 columns">
+            <a class="link ga-link" href="https://gist.github.com/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
+              <span class="text">Gists</span>
+            </a>
+          </div>
+          <div class="social medium-2 columns">
+            <a class="link ga-link" href="https://twitter.com/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/twitter.png">
+              <span class="text">Twitter</span>
+            </a>
+          </div>
+          <div class="social medium-2 columns">
+            <a class="link ga-link" href="https://www.linkedin.com/in/dylants">
+              <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/linkedin.png">
+              <span class="text">LinkedIn</span>
+            </a>
+          </div>
+        </section>
+      </nav>
+      <nav class="tab-bar show-for-small">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon">
+            <span></span>
+          </a>
+        </section>
+        <section class="middle tab-bar-section">
+          <h1 class="title">Dylan Smith</h1>
+        </section>
+      </nav>
+      <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li>
+            <label class="first">Social</label>
+          </li>
+          <li>
+            <a class="link ga-link" href="https://github.com/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
+              <span class="text">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="link ga-link" href="https://blog.dylants.com">
+              <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/blog.png">
+              <span class="text">Blog</span>
+            </a>
+          </li>
+          <li>
+            <a class="link ga-link" href="https://stackoverflow.com/users/3666800/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/stack-overflow.png">
+              <span class="text">Stack Overflow</span>
+            </a>
+          </li>
+          <li>
+            <a class="link ga-link" href="https://gist.github.com/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/github.png">
+              <span class="text">Gists</span>
+            </a>
+          </li>
+          <li>
+            <a class="link ga-link" href="https://twitter.com/dylants">
+              <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/twitter.png">
+              <span class="text">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="link ga-link" href="https://www.linkedin.com/in/dylants">
+              <img class="icon square" src="https://s3.amazonaws.com/dylants-resume/public/images/linkedin.png">
+              <span class="text">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <a class="exit-off-canvas" href="#"></a>
 
-            <!-- page content -->
-            {% block content %}{% endblock %}
-            
-        </div>
+      <!-- page content -->
+      {% block content %}{% endblock %}
+
     </div>
+  </div>
 
-    <!--Application JavaScript Files-->
-    {% for jsFile in jsFiles %}
-    <script type="text/javascript" src="{{jsFile}}"></script>
-    {% endfor %}
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/fastclick.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/vendor/placeholder.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+  ga("create", "UA-67864847-1", "auto");
+  ga("send", "pageview");
+  $(".ga-link").on("click", function(event) {
+      ga("send", "event", "link", "click", event.currentTarget.href)
+  });
+  </script>
+  <script>
+  // initialize foundation
+  $(document).foundation({
+    offcanvas: {
+      close_on_click: true
+    }
+  });
+  </script>
+
 </body>
 
 </html>
