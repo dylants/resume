@@ -1,244 +1,227 @@
-{% extends 'layout.server.view.html' %}
+{% extends 'layout.server.view.html' %} {% block content %}
 
-{% block content %}
+<main>
 
-<!-- main content -->
-<main class="main">
-    <!-- profile -->
-    <div class="profile row">
-        <div class="heading small-12 columns">
-            <h2>Profile</h2>
-            <hr>
-        </div>
-    </div>
+  <h2>Profile</h2>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <p>Broad experience leading teams and producing high quality software. Received the highest performance ratings at multiple companies. Identified as a top contributor and received “Critical Talent Award” at PayPal.  Selected as a future technical lead of IBM in IBM's “Fast Track” program.</p>
-            <p>I've worked on the client side and on the server side.  I enjoy solving problems, and helping others.  I'm a mentor and educator both internally in the workplace and externally in the open source community.  I'm regularly involved in local technical groups and hackathons, and was the co-organizer of Austin NodeSchool.</p>
-            <p>For examples of my work, see my <a class="ga-link" href="https://github.com/dylants">GitHub projects</a> and <a class="ga-link" href="https://blog.dylants.com">technical blog</a>.
-        </div>
-    </div>
+  <div class="profile">
+    <p>Broad experience leading teams and producing high quality software. Received the highest performance ratings at multiple companies. Identified as a top contributor and received “Critical Talent Award” at PayPal. Selected as a future technical lead of IBM in IBM's “Fast Track” program.</p>
+    <p>I've worked on the client side and on the server side. I enjoy solving problems, and helping others. I'm a mentor and educator both internally in the workplace and externally in the open source community. I'm regularly involved in local technical groups and hackathons, and was the co-organizer of Austin NodeSchool.</p>
+    <p>For examples of my work, see my <a class="ga-link" href="https://github.com/dylants">GitHub projects</a> and <a class="ga-link" href="https://blog.dylants.com">technical blog</a>.
+  </div>
 
-    <!-- experience -->
-    <div class="experience row">
-        <div class="heading small-12 columns">
-            <h2>Experience</h2>
-            <hr>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/cognitivescale.jpg">
-                <h3>Senior Software Engineer, Development and Team Lead</h3>
-                <h4>CognitiveScale, UI</h4>
-                <h5><span class="duration">August 2014 - Present</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Designed and led in the development of the user interface for CognitiveScale.  The UI was often web based, but some use cases required a native device application (iOS).  The technology for the front end was initially Angular, and in the native device case, a combination of Ionic and Angular.  The front end web technology has since shifted to use a mix of React, Redux, Webpack, and Babel, along with React Native in some experimental native development.  Node.js was used to power the server side of the UI, utilizing Express for APIs and Mongo for storage.</p>
-                <p>Responsible for hiring of new UI engineers, along with mentoring and leading the UI team.  Held daily standups and retrospectives which included the design team as well, as we tried to integrate the efforts of both front end and design.  Responsible for working with the product and business teams to break down customer requirements into work items for the UI team.</p>
-                <p>Assisted the developer operations team on deployment of the Node.js applications, as well as production support for CognitiveScale applications.  Helped build documentation and training around the use of CognitiveScale for customer sessions.</p>
-            </div>
-        </div>
+  <h2>Experience</h2>
+
+  <div class="companies">
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/cognitivescale.jpg">
+      </div>
+      <div class="text">
+        <div class="title">Senior Software Engineer, Team Lead</div>
+        <div class="company-name">CognitiveScale, UI</div>
+        <div class="details"><span class="duration">August 2014 - Present</span>|<span class="location">Austin, TX</span></div>
+      </div>
     </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon" src="https://s3.amazonaws.com/dylants-resume/public/images/nodeschool.png">
-                <h3>Co-Organizer and Mentor</h3>
-                <h4>Austin NodeSchool</h4>
-                <h5><span class="duration">September 2014 - March 2016</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Co-organizer, mentor, and frequent presenter of Austin NodeSchool.  Helped build the Austin NodeSchool presence using the available open source community tools and encouraged others to help with this effort.  Presented multiple workshops at events and helped answer questions outside the hosted events.  More information can be found at <a class="ga-link" href="http://nodeschool.io/austin">Austin NodeSchool</a>.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/maker-square.png">
-                <h3>Mentor</h3>
-                <h4>MakerSquare</h4>
-                <h5><span class="duration">July 2014 - February 2015</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Volunteer for the MakerSquare mentor program.  MakerSquare provides a three-month course for students who are interested in transitioning to a software engineering career.  I often was paired with a student for me to mentor outside of class.  I met with each of these students on a weekly basis and, during these meetings, helped with course material, answered questions, reviewed the student's resume, and provided advice about the industry.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/xogroup.jpg">
-                <h3>Senior Software Engineer</h3>
-                <h4>XO Group, Labs</h4>
-                <h5><span class="duration">June 2013 – August 2014</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Analyzed internal bride data, and helped design a vendor app that provides vendors with a better understanding of their customers.  Prototyped data endpoints and developed an Apple push notification service for the app.  Setup an internal npm registry for internal Node.js packages, and helped developer operations design automation to deploy Node.js to production.</p>
-                <p>Researched price data available, and developed APIs useful in prototyping a mobile app experience around displaying the price of wedding related products for consumers.  The APIs were developed in Node.js, using Express, and utilized Mongo as the backend database.  Passport security was integrated to allow user profiles in the mobile app.</p>
-                <p>Developed an e-commerce marketplace platform to provide TheKnot vendors an ability to sell to the general public.  The APIs were developed in Java/Spring, and utilized Spring Security.  Designed and developed an admin interface to this system using Backbone.js, and used Node.js to both serve up the UI and test the backend APIs.  Setup a Jenkins continuous integration server to run nightly builds and deploy to an AWS EC2 environment.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/paypal.png">
-                <h3>Senior User Interface Engineer</h3>
-                <h4>PayPal, Identity</h4>
-                <h5><span class="duration">January 2013 - June 2013</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Worked on the PayPal Identity program, providing support to customers who wish to use PayPal to identify themselves to third party merchant web sites.</p>
-                <p>Built and maintained third party JavaScript web applications which merchants could use to interact with the PayPal Identity offering, using mostly Backbone as a framework, Dust as a templating engine, and RequireJS to manage dependencies.  Spring REST and Node.js (depending on the application) were used on the backend to manage sending data needed to the client (browser).</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/ebay.png">
-                <h3>Senior Software Engineer, Development Lead</h3>
-                <h4>eBay, Resolutions Center</h3>
-                <h5><span class="duration">January 2012 - December 2012</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>As part of the first eBay development team in Austin, helped in the transition of a large, legacy Java web application (the Resolution Center) hosted on the eBay website.</p>
-                <p>Led development and architecture of the Resolutions Center redesign as part of the Simplified Claim Filing project.  This involved a major redesign of the legacy platform to an open source Spring/JAX-RS/OSGi based solution.  The update also included adoption of a JavaScript MVW style framework for the front-end.</p>
-                <p>Continually involved in design, architecture, and planning of future work by aligning with the business, reaching out to external teams, and resource planning for FY2012/13 deliverables.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/paypal.png">
-                <h3>Senior Software Engineer</h3>
-                <h4>PayPal, Architecture Infrastructure Web Technology</h4>
-                <h5><span class="duration">January 2010 - January 2012</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Senior developer on web application infrastructure framework (Sparta).  Developed, led and maintained code used by PayPal to host Java based applications running the PayPal website.</p>
-                <p>Architected and developed multiple Java based projects glued together with Maven, utilizing Spring for core configuration and web flow.</p>
-                <p>Designed and implemented Eclipse based plugins used by developers to build applications and add individual web pages to existing projects.</p>
-                <p>Lead technical developer on PayPal’s Digital Goods Express Checkout application, the first PayPal web flow to use “Remember Me” authentication.</p>
-                <p>Led education sessions across the company on how to use Java, Spring, Maven, Eclipse, and Sparta based applications in general.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/paypal.png">
-                <h3>Staff Software Engineer, Team Lead</h3>
-                <h4>PayPal, Core Technologies Automation</h3>
-                <h5><span class="duration">April 2008 - January 2010</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p> Created, designed, and implemented a Java based automation framework used by teams across PayPal.</p>
-                <p> Led an effort to migrate testing to this Java based framework, gave presentations on its need and benefits to executive level management while leading educational sessions across the company.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
-                <h3>Staff Software Engineer</h3>
-                <h4>IBM, Web Services and Web Services Security Development</h3>
-                <h5><span class="duration">January 2007 - April 2008</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Acquired a proficiency in Web Services policy set framework and administrative console, in addition to Web Services Security internals and caching solutions.</p>
-                <p>Designed and implemented many features in Web Services, including schema definitions, working with JAXB generated objects, policy interactions, security role definitions, and multiple admin tasks.</p>
-                <p>Developed Web Services Security functions. This required an understanding of internal caching mechanisms and an expansion upon those using MBean and JDBC/Database solutions.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
-                <h3>Staff Software Engineer, Team Lead</h3>
-                <h4>IBM, Web Services and Web Services Security Automation</h3>
-                <h5><span class="duration">2006 - 2007</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Created and led a WebSphere Console automation team using the GUI automation framework I designed and developed the previous year.</p>
-                <p>Designed automation harnesses to test Web Services Policy Set features, Jython admin commands, Web Services Security, and general service and client Web Services application.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
-                <h3>Software Engineer, Team Lead</h3>
-                <h4>IBM, WebSphere Console GUI Automation FVT Lead</h3>
-                <h5><span class="duration">2005 - 2006</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Began career manually testing the security panels of WebSphere Console (web interface), and found that moving the test team to a GUI automation solution would greatly increase efficiency of testing.</p>
-                <p>Led a team developing a framework using Rational Functional Tester (RFT, an Eclipse based tool formally known as XDE) to test the WebSphere Console.  As more WebSphere Console FVT teams merged in, the framework was broadened to support the multiple users.  The framework is currently in production today, and has led to patent submissions.</p>
-                <p>Led an RFT focused GUI Automation Community consisting of many members across IBM worldwide.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <div class="company">
-                <img class="icon rectangle" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
-                <h3>Co-Op</h3>
-                <h4>IBM, WebSphere FVT, Kerberos FVT and SVT</h3>
-                <h5><span class="duration">2000 - 2004</span>|<span class="location">Austin, TX</span></h5>
-            </div>
-            <div class="description">
-                <p>Became technical team lead for WebSphere Functional Verification Test (FVT) automation project using Rational XDE/Robot GUI automation tool.</p>
-                <p>FVT for Network Authentication Service (IBM’s Kerberos security product).  System Verification Test (SVT) for DCE and Network Authentication Service.</p>
-            </div>
-        </div>
+    <div class="description">
+      <p>Designed and led in the development of the user interface for CognitiveScale. The UI was often web based, but some use cases required a native device application (iOS). The technology for the front end was initially Angular, and in the native device case, a combination of Ionic and Angular. The front end web technology has since shifted to use a mix of React, Redux, Webpack, and Babel, along with React Native in some experimental native development. Node.js was used to power the server side of the UI, utilizing Express for APIs and Mongo for storage.</p>
+      <p>Responsible for hiring of new UI engineers, along with mentoring and leading the UI team. Held daily standups and retrospectives which included the design team as well, as we tried to integrate the efforts of both front end and design. Responsible for working with the product and business teams to break down customer requirements into work items for the UI team.</p>
+      <p>Assisted the developer operations team on deployment of the Node.js applications, as well as production support for CognitiveScale applications. Helped build documentation and training around the use of CognitiveScale for customer sessions.</p>
     </div>
 
-    <div class="awards row">
-        <div class="heading small-12 columns">
-            <h2>Leadership / Awards</h2>
-            <hr>
-        </div>
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/nodeschool.png">
+      </div>
+      <div class="text">
+        <div class="title">Co-Organizer and Mentor</div>
+        <div class="company-name">Austin NodeSchool</div>
+        <div class="details"><span class="duration">September 2014 - March 2016</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Co-organizer, mentor, and frequent presenter of Austin NodeSchool. Helped build the Austin NodeSchool presence using the available open source community tools and encouraged others to help with this effort. Presented multiple workshops at events and helped answer questions outside the hosted events. More information can be found at <a class="ga-link" href="http://nodeschool.io/austin">Austin NodeSchool</a>.</p>
     </div>
 
-    <div class="awards-list row">
-        <div class="small-12 columns">
-            <ul>
-                <li>NodeSchool mentor, co-organizer of Austin NodeSchool</li>
-                <li>ATX Hack for Change participant, benefiting the Capital Area Food Bank</li>
-                <li>Mentor for the MakerSquare program</li>
-                <li>Co-coordinator for Austin NodeBots Day 2014</li>
-                <li>Volunteer soccer coach for local youth soccer team</li>
-                <li>Selected as a “Critical Talent” by PayPal as top contributor to the company</li>
-                <li>Multiple awards given for outstanding contributions at PayPal and eBay</li>
-                <li>Led education sessions for PayPal employees at multiple sites</li>
-                <li>Technical Resource Candidate (IBM’s “Fast Track” program for future technical leaders)</li>
-                <li>1 Rating at IBM (Given to the top 5-10% of the company), multiple IBM Team Awards</li>
-            </ul>
-        </div>
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/maker-square.png">
+      </div>
+      <div class="text">
+        <div class="title">Mentor</div>
+        <div class="company-name">MakerSquare</div>
+        <div class="details"><span class="duration">July 2014 - February 2015</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Volunteer for the MakerSquare mentor program. MakerSquare provides a three-month course for students who are interested in transitioning to a software engineering career. I often was paired with a student for me to mentor outside of class. I met with each of these students on a weekly basis and, during these meetings, helped with course material, answered questions, reviewed the student's resume, and provided advice about the industry.</p>
     </div>
 
-    <div class="education row">
-        <div class="heading small-12 columns">
-            <h2>Education</h2>
-            <hr>
-        </div>
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/xogroup.jpg">
+      </div>
+      <div class="text">
+        <div class="title">Senior Software Engineer</div>
+        <div class="company-name">XO Group, Labs</div>
+        <div class="details"><span class="duration">June 2013 – August 2014</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Analyzed internal bride data, and helped design a vendor app that provides vendors with a better understanding of their customers. Prototyped data endpoints and developed an Apple push notification service for the app. Setup an internal npm registry for internal Node.js packages, and helped developer operations design automation to deploy Node.js to production.</p>
+      <p>Researched price data available, and developed APIs useful in prototyping a mobile app experience around displaying the price of wedding related products for consumers. The APIs were developed in Node.js, using Express, and utilized Mongo as the backend database. Passport security was integrated to allow user profiles in the mobile app.</p>
+      <p>Developed an e-commerce marketplace platform to provide TheKnot vendors an ability to sell to the general public. The APIs were developed in Java/Spring, and utilized Spring Security. Designed and developed an admin interface to this system using Backbone.js, and used Node.js to both serve up the UI and test the backend APIs. Setup a Jenkins continuous integration server to run nightly builds and deploy to an AWS EC2 environment.</p>
     </div>
 
-    <div class="row">
-        <div class="small-12 columns">
-            <p>The University of Texas; Austin, Texas — Bachelor’s in Computer Science, 2004</p>
-        </div>
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/paypal.png">
+      </div>
+      <div class="text">
+        <div class="title">Senior User Interface Engineer</div>
+        <div class="company-name">PayPal, Identity</div>
+        <div class="details"><span class="duration">January 2013 - June 2013</span>|<span class="location">Austin, TX</span></div>
+      </div>
     </div>
+    <div class="description">
+      <p>Worked on the PayPal Identity program, providing support to customers who wish to use PayPal to identify themselves to third party merchant web sites.</p>
+      <p>Built and maintained third party JavaScript web applications which merchants could use to interact with the PayPal Identity offering, using mostly Backbone as a framework, Dust as a templating engine, and RequireJS to manage dependencies. Spring REST and Node.js (depending on the application) were used on the backend to manage sending data needed to the client (browser).</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/ebay.png">
+      </div>
+      <div class="text">
+        <div class="title">Senior Software Engineer, Development Lead</div>
+        <div class="company-name">eBay, Resolutions Center</div>
+        <div class="details"><span class="duration">January 2012 - December 2012</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>As part of the first eBay development team in Austin, helped in the transition of a large, legacy Java web application (the Resolution Center) hosted on the eBay website.</p>
+      <p>Led development and architecture of the Resolutions Center redesign as part of the Simplified Claim Filing project.  This involved a major redesign of the legacy platform to an open source Spring/JAX-RS/OSGi based solution.  The update also included adoption of a JavaScript MVW style framework for the front-end.</p>
+      <p>Continually involved in design, architecture, and planning of future work by aligning with the business, reaching out to external teams, and resource planning for FY2012/13 deliverables.</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/paypal.png">
+      </div>
+      <div class="text">
+        <div class="title">Senior Software Engineer</div>
+        <div class="company-name">PayPal, Architecture Infrastructure Web Technology</div>
+        <div class="details"><span class="duration">January 2010 - January 2012</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Senior developer on web application infrastructure framework (Sparta). Developed, led and maintained code used by PayPal to host Java based applications running the PayPal website.</p>
+      <p>Architected and developed multiple Java based projects glued together with Maven, utilizing Spring for core configuration and web flow.</p>
+      <p>Designed and implemented Eclipse based plugins used by developers to build applications and add individual web pages to existing projects.</p>
+      <p>Lead technical developer on PayPal’s Digital Goods Express Checkout application, the first PayPal web flow to use “Remember Me” authentication.</p>
+      <p>Led education sessions across the company on how to use Java, Spring, Maven, Eclipse, and Sparta based applications in general.</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/paypal.png">
+      </div>
+      <div class="text">
+        <div class="title">Staff Software Engineer, Team Lead</div>
+        <div class="company-name">PayPal, Core Technologies Automation</div>
+        <div class="details"><span class="duration">April 2008 - January 2010</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Created, designed, and implemented a Java based automation framework used by teams across PayPal.</p>
+      <p>Led an effort to migrate testing to this Java based framework, gave presentations on its need and benefits to executive level management while leading educational sessions across the company.</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
+      </div>
+      <div class="text">
+        <div class="title">Staff Software Engineer</div>
+        <div class="company-name">IBM, Web Services and Web Services Security Development</div>
+        <div class="details"><span class="duration">January 2007 - April 2008</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Acquired a proficiency in Web Services policy set framework and administrative console, in addition to Web Services Security internals and caching solutions.</p>
+      <p>Designed and implemented many features in Web Services, including schema definitions, working with JAXB generated objects, policy interactions, security role definitions, and multiple admin tasks.</p>
+      <p>Developed Web Services Security functions. This required an understanding of internal caching mechanisms and an expansion upon those using MBean and JDBC/Database solutions.</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
+      </div>
+      <div class="text">
+        <div class="title">Staff Software Engineer, Team Lead</div>
+        <div class="company-name">IBM, Web Services and Web Services Security Automation</div>
+        <div class="details"><span class="duration">2006 - 2007</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Created and led a WebSphere Console automation team using the GUI automation framework I designed and developed the previous year.</p>
+      <p>Designed automation harnesses to test Web Services Policy Set features, Jython admin commands, Web Services Security, and general service and client Web Services application.</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
+      </div>
+      <div class="text">
+        <div class="title">Software Engineer, Team Lead</div>
+        <div class="company-name">IBM, WebSphere Console GUI Automation FVT Lead</div>
+        <div class="details"><span class="duration">2005 - 2006</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Began career manually testing the security panels of WebSphere Console (web interface), and found that moving the test team to a GUI automation solution would greatly increase efficiency of testing.</p>
+      <p>Led a team developing a framework using Rational Functional Tester (RFT, an Eclipse based tool formally known as XDE) to test the WebSphere Console.  As more WebSphere Console FVT teams merged in, the framework was broadened to support the multiple users.  The framework is currently in production today, and has led to patent submissions.</p>
+      <p>Led an RFT focused GUI Automation Community consisting of many members across IBM worldwide.</p>
+    </div>
+
+    <div class="company">
+      <div class="image-wrap">
+        <img class="image" src="https://s3.amazonaws.com/dylants-resume/public/images/ibm.png">
+      </div>
+      <div class="text">
+        <div class="title">Co-Op</div>
+        <div class="company-name">IBM, WebSphere FVT, Kerberos FVT and SVT</div>
+        <div class="details"><span class="duration">2000 - 2004</span>|<span class="location">Austin, TX</span></div>
+      </div>
+    </div>
+    <div class="description">
+      <p>Became technical team lead for WebSphere Functional Verification Test (FVT) automation project using Rational XDE/Robot GUI automation tool.</p>
+      <p>FVT for Network Authentication Service (IBM’s Kerberos security product).  System Verification Test (SVT) for DCE and Network Authentication Service.</p>
+    </div>
+
+  </div>
+
+
+  <h2>Leadership / Awards</h2>
+
+  <ul class="awards">
+    <li>NodeSchool mentor, co-organizer of Austin NodeSchool</li>
+    <li>ATX Hack for Change participant, benefiting the Capital Area Food Bank</li>
+    <li>Mentor for the MakerSquare program</li>
+    <li>Co-coordinator for Austin NodeBots Day 2014</li>
+    <li>Volunteer soccer coach for local youth soccer team</li>
+    <li>Selected as a “Critical Talent” by PayPal as top contributor to the company</li>
+    <li>Multiple awards given for outstanding contributions at PayPal and eBay</li>
+    <li>Led education sessions for PayPal employees at multiple sites</li>
+    <li>Technical Resource Candidate (IBM’s “Fast Track” program for future technical leaders)</li>
+    <li>1 Rating at IBM (Given to the top 5-10% of the company), multiple IBM Team Awards</li>
+  </ul>
+
+  <h2>Education</h2>
+
+  <p>The University of Texas; Austin, Texas — Bachelor’s in Computer Science, 2004</p>
 
 </main>
 

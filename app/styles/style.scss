@@ -1,170 +1,178 @@
-// sass-lint:disable-all
-// disabling sass-lint until this is ported over...
+@import './swatches';
+$body-breakpoint: 800px;
 
-$smoke: #eee;
-$charcoal: #555;
-$black: #000;
-$total-columns: 12;
+body {
+  font-family: 'Roboto', serif;
+  font-weight: 300;
+  color: $swatch01;
+  max-width: $body-breakpoint;
+  $body-padding: 10px;
+  $body-padding-breakpoint: $body-breakpoint + ($body-padding * 4);
+  padding: 0 $body-padding;
 
-// all screen sizes and print
-@media only print, screen {
-  body * {
-    font-family: Roboto,'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
+  @media all and (min-width: $body-padding-breakpoint) {
+    margin: 0 auto;
+    padding: 0;
   }
-  // nav
-  .nav.hide-for-small {
-    margin-bottom: 3rem;
-    .top {
-      margin-top: 1rem;
-    }
-    hr {
-      margin: 0.5rem 0 1rem;
-    }
-    .name {
-      font-weight: 300;
-      font-size: 2.25rem;
-      text-align: right;
-      margin: 0;
-    }
-    .meta {
-      text-align: right;
-      font-weight: 300;
-    }
-    .social {
-      text-align: center;
-    }
-    .link {
-      color: $charcoal;
-      font-weight: 300;
-      text-decoration: none;
-      transition: all 300ms ease;
-      &:hover {
-        color: $black;
-      }
-      .icon {
-        position: absolute;
-        max-width: 2rem;
-        margin-left: -1rem;
-        top: -5px;
-      }
-      .square {
-        max-width: 1.5rem;
-        margin-top: 4px;
-      }
-      .text {
-        margin-left: 1rem;
-      }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:link,
+  &:visited {
+    color: $swatch02;
+  }
+
+  &:hover,
+  &:active {
+    color: $swatch01;
+  }
+}
+
+header {
+  margin-top: 20px;
+
+  .me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: 1px solid $swatch05;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .meta {
+    font-size: 16px;
+    padding-top: 4px;
+
+    &:last-child {
+      padding-bottom: 10px;
     }
   }
-  .tab-bar.show-for-small {
-    border-bottom: solid 1px gray;
-    margin-bottom: 1rem;
-  }
-  .left-off-canvas-menu {
-    .icon {
-      max-width: 2rem;
-    }
-    .square {
-      max-width: 1.5rem;
-      margin-right: 5px;
-      margin-left: 4px;
+
+  .links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media print {
+      display: none;
     }
   }
-  // main
-  .main {
-    margin-bottom: 1rem;
-    .heading {
-      h2 {
-        font-weight: 300;
-        font-size: 2rem;
-      }
-      hr {
-        border: solid $smoke;
-        border-width: 1px 0 0;
-        margin-top: 0;
-      }
-    }
-    .experience .heading hr {
-      margin-bottom: 0;
-    }
-    .company {
-      margin: 1rem 0;
-      .icon {
-        display: inline;
-        float: left;
-        max-width: 100px;
-        padding-right: 0.75rem;
-        margin-bottom: 1rem;
-      }
-      .rectangle {
-        max-width: 175px;
-        max-height: 70px;
-        margin-top: 7px;
-        margin-bottom: 2rem;
-      }
-      h3,
-      h4,
-      h5 {
-        font-weight: 300;
-        margin: 0;
-      }
-      h5 {
-        font-size: 1rem;
-      }
-      .duration {
-        padding-right: 10px;
-      }
-      .location {
-        padding-left: 10px;
-      }
-    }
-    .description {
-      p {
-        margin-bottom: 0.75rem;
-      }
-    }
-    .awards {
-      margin-top: 1rem;
-      .heading hr {
-        margin-bottom: 1rem;
-      }
-    }
-    .awards-list {
-      li {
-        list-style-type: circle;
-      }
-    }
-    .education .heading hr {
-      margin-bottom: 1rem;
+
+  .link {
+    display: flex;
+    align-items: center;
+    color: $swatch04;
+    padding: 4px;
+  }
+
+  .icon {
+    max-width: 32px;
+    max-height: 32px;
+
+    &.square {
+      max-width: 24px;
+      max-height: 24px;
+      padding-right: 4px;
     }
   }
 }
 
-// print specifics
-@media print {
-  // set the width of the display to what fits a normal 8x10
-  // (and also map it to the 'large' size)
-  html {
-    width: rem-calc(1100px);
+main {
+  margin: 30px 0;
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $swatch03;
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
-  // adjust the large column sizes
-  @for $i from 1 through $total-columns {
-    .large-#{$i} {
-      width: percentage($i / $total-columns);
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    word-spacing: 1px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @media all and (min-width: 700px) {
+      flex-direction: row;
     }
   }
-  // hide the nav icons
-  .nav.hide-for-small .link .icon {
-    display: none;
+
+  .image-wrap {
+    width: 175px;
+    min-width: 175px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    @media print {
+      display: none;
+    }
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .company-name {
+    margin-top: 6px;
+    font-size: 20px;
+  }
+
+  .details {
+    margin-top: 4px;
+    font-size: 16px;
+    color: $swatch04;
+  }
+
+  .duration {
+    padding-right: 12px;
+  }
+
+  .location {
+    padding-left: 12px;
+  }
+
+  .awards {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 18px;
+
+    @media all and (min-width: $body-breakpoint) {
+      padding-left: 40px;
+    }
+
+    li {
+      padding: 4px 0;
+    }
   }
 }
-
-// medium
-@media only screen and (min-width: 40.0625em) {
-}
-
-// large
-@media only screen and (min-width: 64.0625em) {
-}
-
-// sass-lint:enable-all
