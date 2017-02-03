@@ -72,9 +72,12 @@
   })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
   ga("create", "UA-67864847-1", "auto");
   ga("send", "pageview");
-  $(".ga-link").on("click", function(event) {
+  var links = document.getElementsByClassName("ga-link");
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(event) {
       ga("send", "event", "link", "click", event.currentTarget.href)
-  });
+    });
+  }
   </script>
 </body>
 
