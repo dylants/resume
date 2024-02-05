@@ -12,6 +12,7 @@ body {
 
   @media all and (min-width: $body-padding-breakpoint) {
     margin: 0 auto;
+    margin-bottom: 20px;
     padding: 0;
   }
 }
