@@ -166,7 +166,7 @@ main {
     align-items: center;
     padding-bottom: 10px;
 
-  .image-wrap {
+    .image-wrap {
       width: 45px;
       min-width: 45px;
       height: 45px;
@@ -175,8 +175,10 @@ main {
       padding-bottom: 0;
     }
 
-    .description p {
-      margin: 0;
+    .description {
+      p {
+        margin: 0;
+      }
     }
   }
 }
